@@ -1,0 +1,30 @@
+import { Meta, Primary, Controls, Story } from '@storybook/blocks';
+import * as ButtonStories from './Button.stories';
+
+<Meta of={ButtonStories} />
+
+# Button
+
+Button is a clickable interactive element that triggers a response.
+
+### Guidelines
+#### Dos
+- Use buttons for the main actions on your page 
+- Identify the primary action and make it `primary`
+#### Donts
+- Use a button when a link will do (e.g., for navigation-only actions) 
+- Use multiple `primary` buttons in a single UI state
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### Primary
+
+A button can be of primary importance.
+
+<Story of={ButtonStories.Primary} />
